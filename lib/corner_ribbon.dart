@@ -1,7 +1,4 @@
 library corner_ribbon;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
-}
+export 'src/corner_ribbon.dart';
+export 'src/ribbon_position.dart';

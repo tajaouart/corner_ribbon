@@ -1,6 +1,8 @@
 name: example
 description: "A Flutter package for displaying Ribbon Banner on widgets"
 
+publish_to: none
+
 version: 1.0.0+1
 
 environment:
@@ -11,7 +13,8 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.8
-  flutter_corner_banner:
+  corner_ribbon:
+    path: ../
 
 dev_dependencies:
   flutter_test:
@@ -22,3 +25,5 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+  assets:
+    - assets/
