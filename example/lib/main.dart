@@ -33,7 +33,6 @@ class _MyHomePageState extends State<MyHomePage> {
         padding: const EdgeInsets.all(8.0),
         width: double.maxFinite,
         height: double.maxFinite,
-        color: Colors.green,
         child: SingleChildScrollView(
           child: Wrap(
             alignment: WrapAlignment.center,
@@ -41,26 +40,22 @@ class _MyHomePageState extends State<MyHomePage> {
             spacing: 16,
             children: [
               for (final position in RibbonPosition.values)
-                SizedBox(
-                  height: MediaQuery.of(context).size.width * 0.8,
+                Container(
                   width: MediaQuery.of(context).size.width * 0.8,
+                  height: MediaQuery.of(context).size.width * 0.8,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(24),
+                  ),
+                  clipBehavior: Clip.hardEdge,
                   child: CornerRibbon(
-                    label: 'Best Seller !!',
+                    ribbonColor: Colors.orange,
+                    text: 'Best Seller !!',
                     position: position,
                     textStyle: const TextStyle(
+                      fontWeight: FontWeight.bold,
                       color: Colors.black,
-                      fontWeight: FontWeight.w900,
-                      fontSize: 24,
-                      shadows: [
-                        Shadow(
-                          blurRadius: 3.0,
-                          color: Colors.grey,
-                          offset: Offset(1.0, 1.0),
-                        ),
-                      ],
+                      fontSize: 26,
                     ),
-                    ribbonColor: const Color(0xFFFFD700),
-                    // More vibrant yellow
                     child: Image.asset('assets/shoes.png'),
                   ),
                 ),
