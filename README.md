@@ -4,7 +4,7 @@
 of any widget. Use it to highlight features like "SALE," "NEW," or any custom label on your widgets
 with ease.
 
-<img src="https://raw.githubusercontent.com/tajaouart/corner_ribbon/main/corner_ribbon.gif" height="600"/>
+<img src="https://raw.githubusercontent.com/tajaouart/corner_ribbon/main/corner_ribbon.png" height="600"/>
 
 
 ## Features
